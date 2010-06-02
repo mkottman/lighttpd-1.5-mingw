@@ -11,7 +11,8 @@ languages and frameworks should work too.
 Patches are for SVN revision 2724, however I think that it will work on future versions,
 if not, drop me a message, I will update it.
 
-Requirements:
+Requirements
+------------
 
 * SVN - get the lighttpd source: `svn checkout svn://svn.lighttpd.net/lighttpd/trunk/ lighttpd`
 * MinGW - for an unknown reason, the provided GCC 3.5 compiler fails to compile one module, you
@@ -19,15 +20,14 @@ Requirements:
           (run these commands in MSYS)
 * CMake - http://www.cmake.org/cmake/resources/software.html
 * FastCGI - see below
-* some other libraries like PCRE and Zlib/Bzlib - info on how to obtain these in lighttpd/doc/build-win32.txt , or
-    try to find them in http://sourceforge.net/projects/mingw/files/MinGW and
-    http://sourceforge.net/projects/kde-windows/files/pcre/ or compile yourself, and copy the libs into MinGW/lib and
-    headers into MinGW/include
+* some other libraries like PCRE and Zlib/Bzlib - info on how to obtain these in `lighttpd/doc/build-win32.txt`, or
+    try to find them in [MinGW repository](http://sourceforge.net/projects/mingw/files/MinGW) and
+    [here](http://sourceforge.net/projects/kde-windows/files/pcre/) or compile yourself, and copy the libs into `MinGW/lib` and
+    headers into `MinGW/include`
 
 Optional:
 
-* OpenSSL - either download [Win32OpenSSL](http://www.slproweb.com/products/Win32OpenSSL.html) or build yourself,
-            however make sure CMake will find it (it will surely find Win32OpenSSL)
+* OpenSSL - either download [Win32OpenSSL](http://www.slproweb.com/products/Win32OpenSSL.html) or build yourself, however make sure CMake will find it (it will surely find Win32OpenSSL)
 
 Compilation
 ------------
